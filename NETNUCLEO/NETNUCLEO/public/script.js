@@ -231,10 +231,16 @@ document.addEventListener('DOMContentLoaded', () => {
                     );
                 }
 
-                const dados = await response.json();
+                const resultado = await response.json();
+
+                if (!resultado.success) {
+                    throw new Error(
+                        resultado.message || 'Erro ao realizar a consulta.'
+                    );
+                }
 
                 renderizarTabela(
-                    dados,
+                    resultado.data,
                     tabelaBody,
                     resultCount
                 );
