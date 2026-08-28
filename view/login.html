@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Login do sistema NetNúcleo - Horto">
+
+    <title>Login | NetNúcleo - Horto</title>
+
+    <link rel="stylesheet" href="../public/style.css">
+</head>
+
+<body class="login-page">
+
+<header class="header">
+    <div class="header-container">
+
+        <a href="index.html" class="logo-area">
+            <div class="logo-placeholder" aria-label="SESI SENAI">
+                SESI<br>SENAI
+            </div>
+
+            <span>NETNÚCLEO - HORTO</span>
+        </a>
+
+    </div>
+</header>
+
+
+<main class="login-main">
+
+    <section class="login-section">
+
+        <div class="login-card">
+
+            <div class="login-header">
+
+                <div class="login-icon" aria-hidden="true">
+                    🔐
+                </div>
+
+                <span class="section-label">
+                    ACESSO AO SISTEMA
+                </span>
+
+                <h1>Login</h1>
+
+                <p>
+                    Entre com seus dados para acessar o sistema.
+                </p>
+
+            </div>
+
+
+            <form id="login-form" class="login-form">
+
+                <!-- UNIDADE -->
+                <div class="form-group">
+
+                    <label for="unidade">
+                        Unidade
+                    </label>
+
+                    <select
+                        id="unidade"
+                        name="unidade"
+                        required>
+
+                        <option value="">
+                            - Selecione -
+                        </option>
+
+                        <option value="horto">
+                            Horto
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- USUÁRIO -->
+                <div class="form-group">
+
+                    <label for="usuario">
+                        Usuário
+                    </label>
+
+                    <input
+                        type="text"
+                        id="usuario"
+                        name="usuario"
+                        placeholder="Digite seu usuário"
+                        autocomplete="username"
+                        required>
+
+                </div>
+
+
+                <!-- SENHA -->
+                <div class="form-group">
+
+                    <label for="senha">
+                        Senha
+                    </label>
+
+                    <input
+                        type="password"
+                        id="senha"
+                        name="senha"
+                        placeholder="Digite sua senha"
+                        autocomplete="current-password"
+                        required>
+
+                </div>
+
+
+                <!-- MENSAGEM DE ERRO -->
+                <div
+                    id="login-error"
+                    class="form-message error"
+                    role="alert"
+                    aria-live="assertive"
+                    style="display: none;">
+
+                    <strong>Erro:</strong>
+
+                    <span id="error-text">
+                        Preencha todos os campos.
+                    </span>
+
+                </div>
+
+
+                <!-- BOTÃO -->
+                <button
+                    type="submit"
+                    id="btn-entrar"
+                    class="button button-primary">
+
+                    Entrar
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer class="footer">
+
+    <div class="container">
+
+        <p>
+            NetNúcleo - Horto
+        </p>
+
+        <span>
+            Sistema institucional SESI/SENAI
+        </span>
+
+    </div>
+
+</footer>
+
+
+<script src="../public/script.js"></script>
+
+
+<!-- VLibras -->
+
+<div vw class="enabled">
+
+    <div vw-access-button class="active"></div>
+
+    <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+    </div>
+
+</div>
+
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+
+<script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+
+</body>
+</html>
