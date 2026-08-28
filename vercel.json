@@ -4,10 +4,14 @@
       "runtime": "vercel-php@0.6.0"
     }
   },
-  "rewrites": [
+  "routes": [
     {
-      "source": "/",
-      "destination": "/view/login.html"
+      "src": "/",
+      "dest": "/view/login.html"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
     }
   ]
 }
