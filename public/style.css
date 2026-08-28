@@ -1,7 +1,3 @@
-/* ========================================
-   RESET
-======================================== */
-
 * {
     margin: 0;
     padding: 0;
@@ -104,99 +100,72 @@ select {
 /* HEADER */
 
 .header {
+    height: 110px;
+    background-color: #00509E;
+    border-bottom: 4px solid #F58220;
+}
 
-    background: var(--blue-dark);
-
-    border-bottom:
-        4px solid var(--orange);
-
-    color: var(--white);
-
+.text-header {
+    margin: 0;
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 700;
 }
 
 
 .header-container {
-
-    min-height: 72px;
-
+    height: 100%;
+    position: relative;
     display: flex;
-
     align-items: center;
-
-    justify-content: space-between;
-
-    gap: 20px;
-
-    padding:
-        12px 20px;
-
-    max-width: 1400px;
-
-    margin: 0 auto;
-
+    justify-content: center;
 }
 
 
 .logo-area {
-
     display: flex;
-
     align-items: center;
-
-    gap: 12px;
-
-    font-weight: 700;
-
-    font-size: 14px;
-
+    gap: 15px
 }
 
-
-.logo-placeholder {
-
-    width: 48px;
-
-    height: 42px;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    text-align: center;
-
-    line-height: 1;
-
-    font-size: 10px;
-
-    font-weight: 800;
-
-    border:
-        1px solid rgba(255,255,255,.5);
-
+.institution-logo {
+    position: absolute;
+    border-radius: 4%;
+    left: 28px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 150px;
+    height: auto;
 }
 
 
 .menu-button {
-
+    
     background: transparent;
-
+    
     color: var(--white);
-
+    
     border: 0;
-
+    
     font-size: 25px;
-
+    
     cursor: pointer;
-
+    
 }
 
 
 .navigation {
-
+     
     display: none;
+    margin-left: auto;
+}
 
+.netindex {
+    color: #FFFFFF;
+    align-items: center;
+    margin: 0;
+    margin-left: 180px;
+    white-space: nowrap;
 }
 
 
