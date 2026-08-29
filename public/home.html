@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="NetNúcleo - Horto">
+
+    <title>NetNúcleo - Horto</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/public/style.css">
+    <link rel="icon" type="image/png" href="/public/img/favicon.ico">
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="header-container">
+
+        <a href="home.html"
+   class="logo-area"
+   aria-label="NetNúcleo - Horto - Página inicial">
+
+    <img src="/public/img/logo.png", alt="SESI e SENAI", class="institution-logo">
+
+    <h3 class="netindex">
+        NETNÚCLEO - HORTO
+    </h3>
+
+</a>
+
+
+        <button
+            class="menu-button"
+            type="button"
+            aria-label="Abrir menu"
+            aria-expanded="false"
+            aria-controls="menu-principal">
+
+            ☰
+
+        </button>
+
+
+        <nav
+            class="navigation"
+            id="menu-principal"
+            aria-label="Menu principal">
+
+            <a href="#">Cadastros</a>
+
+            <a href="#">Movimentação</a>
+
+            <a href="consulta.html">Consultas</a>
+
+            <a href="#">Relatórios</a>
+
+            <a href="#">Utilitários</a>
+
+            <a href="login.html">Sair</a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main>
+
+    <section class="hero">
+
+        <div class="container">
+
+            <span class="section-label">
+                NETNÚCLEO
+            </span>
+
+            <h1>
+                Bem-vindo ao<br>
+                <strong>NetNúcleo - Horto</strong>
+            </h1>
+
+            <p>
+                Acesse uma das opções abaixo para consultar
+                e gerenciar as informações do sistema.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section class="quick-access">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <h2>Acesso rápido</h2>
+
+                <p>
+                    Selecione uma opção para continuar.
+                </p>
+
+            </div>
+
+
+            <div class="cards">
+                 <a href="consulta.html"
+       class="system-card"
+       aria-label="Realizar consulta">
+
+        <div class="card-icon" aria-hidden="true">
+            🔎
+        </div>
+
+        <div class="card-content">
+
+            <h3>
+                Realizar Consulta
+            </h3>
+
+            <p>
+                Consulte as informações do sistema.
+            </p>
+
+        </div>
+
+        <span
+            class="card-arrow"
+            aria-hidden="true">
+            →
+        </span>
+
+    </a>
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer class="footer">
+
+    <div class="container">
+
+        <p>
+            NetNúcleo - Horto
+        </p>
+
+        <span>
+            Sistema institucional SESI/SENAI
+        </span>
+
+    </div>
+
+</footer>
+
+
+<!-- JavaScript -->
+<script src="/public/script.js"></script>
+
+
+<!-- VLibras -->
+
+<div vw class="enabled">
+
+    <div vw-access-button class="active"></div>
+
+    <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+    </div>
+
+</div>
+
+
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+
+<script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+
+</body>
+</html>
