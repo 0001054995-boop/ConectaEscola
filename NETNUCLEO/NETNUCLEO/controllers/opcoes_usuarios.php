@@ -1,0 +1,3 @@
+<?php
+declare(strict_types=1); require_once __DIR__.'/../config/config.php'; require_once __DIR__.'/../includes/auth.php'; exigirPapelJson(['admin']); header('Content-Type: application/json; charset=utf-8');
+try{$i=$pdo->query('SELECT idInstrutor AS id,nomeInstrutor AS nome FROM instrutor WHERE statusInstrutor=1 ORDER BY nomeInstrutor')->fetchAll();$a=$pdo->query('SELECT idAluno AS id,nomeAluno AS nome FROM aluno ORDER BY nomeAluno')->fetchAll();echo json_encode(['success'=>true,'instrutores'=>$i,'alunos'=>$a],JSON_UNESCAPED_UNICODE);}catch(Throwable $e){http_response_code(500);echo json_encode(['success'=>false,'message'=>'Não foi possível carregar opções.'],JSON_UNESCAPED_UNICODE);}

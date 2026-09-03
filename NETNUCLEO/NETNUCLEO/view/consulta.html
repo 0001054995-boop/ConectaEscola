@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Consulta de horários do sistema NetNúcleo - Horto"><title>Consulta Horário | NetNúcleo</title>
+<link rel="stylesheet" href="../public/style.css">
+</head>
+<body data-role="admin">
+<header class="header"><div class="header-container"><a href="index.html" class="logo-area" aria-label="NetNúcleo - Horto - Página inicial"><img src="../public/img/logo.png" alt="SESI e SENAI" class="institution-logo"><h3 class="netindex">NETNÚCLEO - HORTO</h3></a><button type="button" class="menu-button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal">☰</button><nav class="navigation" id="menu-principal"><a href="index.html">Início</a><a href="../controllers/cadastrar_aula.php">Cadastros</a><a href="#" class="active">Consultas</a><a href="#">Relatórios</a><a href="#">Utilitários</a></nav></div></header><div class="screen-switcher" aria-label="Alternar tela"><span>Alternar tela:</span><a href="index.html" class="active">Admin</a><a href="instrutor.html" class="">Instrutor</a><a href="aluno.html" class="">Aluno</a></div>
+<main class="page-main"><div class="container">
+<nav class="breadcrumb"><a href="index.html">Início</a><span>/</span><span>Consultas</span><span>/</span><strong>Consulta Horário</strong></nav>
+<div class="page-title"><span class="section-label">CONSULTAS</span><h1>Consulta Horário</h1><p>A tela já possui aulas pré-cadastradas no banco. Você pode filtrar por qualquer combinação disponível.</p></div>
+<section class="filter-card"><div class="card-header"><div><h2>Filtros de pesquisa</h2><p>Data, período, turma, instrutor, matéria e situação.</p></div></div>
+<form id="filter-form" aria-label="Filtros para consulta de horários">
+<div class="form-group"><label for="data-de-aula">Data de aula</label><input type="date" id="data-de-aula" name="dataAula"></div>
+<div class="form-group"><label for="periodo">Período</label><select id="periodo" name="periodo"><option value="">- Todos -</option><option value="Manhã">Manhã</option><option value="Tarde">Tarde</option><option value="Noite">Noite</option></select></div>
+<div class="form-group"><label for="turma">Turma</label><select id="turma" name="turma"><option value="">- Todas -</option></select></div>
+<div class="form-group"><label for="instrutor">Instrutor</label><select id="instrutor" name="instrutor"><option value="">- Todos -</option></select></div>
+<div class="form-group"><label for="materia">Matéria</label><select id="materia" name="materia"><option value="">- Todas -</option></select></div>
+<div class="form-group"><label for="situacao">Situação da aula</label><select id="situacao" name="situacao"><option value="">- Todas -</option><option value="realizada">Realizada</option><option value="nao_realizada">Não realizada</option></select></div>
+<div class="checkbox-group"><input type="checkbox" id="encerradas" name="encerradas" value="1"><label for="encerradas">Mostrar turmas encerradas</label></div>
+<div class="form-actions"><button type="submit" class="button button-primary">Filtrar</button><button type="button" id="limpar-filtros" class="button button-secondary">Limpar</button></div>
+</form></section>
+<section class="results-section" aria-labelledby="titulo-resultados"><div class="section-heading"><div><span class="section-label">RESULTADO</span><h2 id="titulo-resultados">Resultados da consulta</h2></div><span id="result-count" class="result-count">0 resultados</span></div>
+<div class="table-container"><table><caption class="sr-only">Resultados da consulta de horários</caption><thead><tr><th>Data</th><th>Horário</th><th>Turma</th><th>Instrutor</th><th>Matéria</th><th>Sala</th><th>Situação</th></tr></thead><tbody id="results-body"></tbody></table></div></section>
+</div></main>
+<script src="../public/script.js"></script>
+</body></html>
